@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>b1962019-65df-4d23-85e3-10b5caf13a39</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanArchitecture-Aspire.ApiService\CleanArchitecture-Aspire.ApiService.csproj" />
+    <ProjectReference Include="..\CleanArchitecture-Aspire.Web\CleanArchitecture-Aspire.Web.csproj" />
+    <ProjectReference Include="..\service.test\service.test.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.0-preview.6.24214.1" />
+  </ItemGroup>
+
+</Project>
